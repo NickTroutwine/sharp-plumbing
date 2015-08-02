@@ -1,0 +1,21 @@
+{
+  "name": "unit-project-api",
+  "version": "0.0.0",
+  "homepage": "https://github.com/NickTroutiwne/sharp-plumbing",
+  "authors": [
+    "NickTroutwine, Matt Eubanks"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-ui-router": "~0.2.15"
+  }
+}
