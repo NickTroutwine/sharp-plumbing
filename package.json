@@ -1,0 +1,22 @@
+{
+  "name": "unit-8sb-express-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "mocha": "^2.2.5",
+    "superagent": "^1.2.0",
+    "supertest": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
