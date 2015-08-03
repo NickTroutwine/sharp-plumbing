@@ -2,17 +2,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Sharp Plumbing</title>
-  <link rel="stylesheet" type="text/css" href="./pages/style-page.css">
+  <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/small-business.css" rel="stylesheet"
 </head>
 <script src="./lib/angular/angular.min.js"></script>
 <script src="./lib/angular-ui-router/release/angular-ui-router.min.js"></script>
- <script src="main.js"></script>
+<script src="main.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script src="JavaScript/bootstrap.min.js"></script> 
+
 <body ng-app="main">
-  <div class = "navBar">
-    <a class ="navLink" ui-sref="home">Home</a>  |
-    <a class ="navLink" ui-sref="services">Services</a>  |
-    <a class ="navLink" ui-sref="application">Application</a>  |
-  </div>
-  <div ui-view></div>
-</body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./pix/1970.jpg" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a ui-sref="home">Home</a>
+                    </li>
+                    <li>
+                        <a ui-sref="services">Services</a>
+                    </li>
+                    <li>
+                        <a ui-sref="application">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+  <div class="container"> 
+  <div ui-view></div> 
+
+</body> 
 </html>
