@@ -7,8 +7,11 @@
     "test": "test"
   },
   "dependencies": {
-    "express": "^4.12.4",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
     "mocha": "^2.2.5",
+    "mongoose": "^4.1.1",
     "superagent": "^1.2.0",
     "supertest": "^1.0.1"
   },

@@ -27,14 +27,6 @@ app.get('/application', function (req, res){
 });
 
 app.use(express.static('client'));
-// if('PORT' in process.env){
-// 	console.log('port exist?');
-// 	app.listen(parseInt(process.env.PORT, 10));
-// } else{
-// 	app.listen(3000);
-// }
-console.log('port');
-console.log(process.env.PORT);
 app.listen(process.env.PORT || 3000);
 
 
