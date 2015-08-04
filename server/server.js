@@ -27,12 +27,13 @@ app.get('/application', function (req, res){
 });
 
 app.use(express.static('client'));
-if('PORT' in process.env){
-	console.log('port exist?');
-	app.listen(parseInt(process.env.PORT, 10));
-} else{
-	app.listen(3000);
-}
+// if('PORT' in process.env){
+// 	console.log('port exist?');
+// 	app.listen(parseInt(process.env.PORT, 10));
+// } else{
+// 	app.listen(3000);
+// }
+app.listen(prcess.env.port || 3000);
 
 
 module.exports = app;
