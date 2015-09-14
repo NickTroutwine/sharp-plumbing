@@ -1,1 +1,4 @@
 node_modules
+client/lib
+client/fonts
+client/css
