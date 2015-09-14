@@ -1,14 +1,3 @@
-// var http = require('http');
-// var fs = require('fs');
-// fs.readFile('./client/pages/index.html', function (err, html) {
-//     if (err) {
-//         throw err; 
-//     }       
-//     http.createServer(function(request, response) {  
-//         response.write(html);  
-//         response.end();  
-//     }).listen(3000);
-// });
 var express = require('express');
 var app = express(); 
 var path = require('path');
@@ -27,14 +16,8 @@ app.get('/application', function (req, res){
 });
 
 app.use(express.static('client'));
-// if('PORT' in process.env){
-// 	console.log('port exist?');
-// 	app.listen(parseInt(process.env.PORT, 10));
-// } else{
-// 	app.listen(3000);
-// }
-console.log('port');
-console.log(process.env.PORT);
+
+
 app.listen(process.env.PORT || 3000);
 
 
