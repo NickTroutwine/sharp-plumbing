@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sharp Plumbing</title>
+  <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<script src="./lib/angular/angular.min.js"></script>
+<script src="./lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="./JavaScript/main.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="JavaScript/bootstrap.min.js"></script>
+<body ng-app="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <a class ="navLink" ui-sref="home">Home</a>  |
+        <a class ="navLink" ui-sref="services">Services</a>  |
+        <a class ="navLink" ui-sref="application">Application</a>  |
+      </div>
+    </div>
+  </div>
+
+  <div ui-view></div>
+
+</body>
+</html>
